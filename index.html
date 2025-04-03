@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
   <title>Change Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Change Calculator</h1>
+
   <label for="amount-due">Amount Due:</label>
-  <input type="number" id="amount-due" placeholder="Enter amount due" required>
+  <input id="amount-due" type="number" placeholder="Enter amount due" required>
+
   <label for="amount-received">Amount Received:</label>
-  <input type="number" id="amount-received" placeholder="Enter amount received" required>
+  <input id="amount-received" type="number" placeholder="Enter amount received" required>
+
   <button id="calculate-change">Calculate Change</button>
-  <p id="dollars-output"></p>
-  <p id="quarters-output"></p>
-  <p id="dimes-output"></p>
-  <p id="nickels-output"></p>
-  <p id="pennies-output"></p>
+
+  <p>Dollars: <span id="dollars-output"></span></p>
+  <p>Quarters: <span id="quarters-output"></span></p>
+  <p>Nickels: <span id="nickels-output"></span></p>
+  <p>Dimes: <span id="dimes-output"></span></p>
+  <p>Pennies: <span id="pennies-output"></span></p>
+
   <script src="main.js"></script>
 </body>
 </html>
