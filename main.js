@@ -8,7 +8,7 @@ function calculateChange() {
 
     let change = Math.round((amountReceived - amountDue) * 100);
 
-    if (isNaN(change) || change < 0) {
+    if (change < 0) {
         alert("Please enter valid amounts.");
         return;
     }
