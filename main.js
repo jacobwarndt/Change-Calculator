@@ -1,1 +1,5 @@
-// Write your JavaScript here
+document.getElementById("calculate-change").addEventListener("click", function() {
+    calculateChange();
+});
+
+function calculateChange() {
